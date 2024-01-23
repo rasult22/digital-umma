@@ -1,0 +1,6 @@
+---
+const {type} = Astro.props
+---
+<button class={`text-[24px] font-semibold rounded-[11px] py-[10px] px-[39px] font-railway ${type === 'primary' ? 'bg-gradient-to-r from-teal-500 via-indigo-700 to-purple-900': 'bg-[#65738087]'}`}>
+  <slot />
+</button>

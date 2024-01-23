@@ -1,30 +1,28 @@
 ---
 import { Icon } from "astro-icon/components";
-import ContentSection from "~/components/content-section.astro";
+import UIBtn from "./ui-btn.astro";
 ---
 
-<ContentSection title="Just ship less" id="intro">
-  <Icon slot="eyebrow" name="logomark" class="size-32" />
-  <Fragment slot="lead">
-    Astro is a new kind of site builder for the
-    <span class="text-primary">modern</span> web.
-    <span class="text-primary">Lightning-fast</span>
-    performance meets <span class="text-primary">powerful</span> developer experience.
-  </Fragment>
-  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
-    <a
-      href="https://docs.astro.build/"
-      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
-    >
-      <Icon name="mdi:telescope" class="size-8" />
-      <span>Read the docs</span>
-    </a>
-    <a
-      href="https://astro.new/"
-      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
-    >
-      <Icon name="mdi:rocket" class="size-8" />
-      <span>Try it out</span>
-    </a>
+<div class="">
+  <div class="flex items-center space-x-5 text-[30px] font-medium">
+    <span>17 Февраля, 2024</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+      <circle cx="5" cy="5" r="5" fill="#D9D9D9"/>
+    </svg>
+    <span>11:00 (UTC 6+)</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+      <circle cx="5" cy="5" r="5" fill="#D9D9D9"/>
+    </svg>
+    <span>Алматы, Казахстан</span>
   </div>
-</ContentSection>
+  <div class="mt-[26px] font-railway text-[88px] leading-[100px] uppercase font-extrabold max-w-[700px]">
+    Digital Umma IT Forum
+  </div>
+  <div class="mt-[36px] font-railway">
+    Соединяя IT и Исламские Ценности
+  </div>
+  <div class="mt-[36px] space-x-4">
+    <UIBtn type="primary">Принять участие</UIBtn>
+    <UIBtn>Стать спикером</UIBtn>
+  </div>
+</div>

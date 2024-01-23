@@ -1,6 +1,5 @@
 ---
 import { Icon } from "astro-icon/components";
-import ContentSection from "~/components/content-section.astro";
 import type { FeatureItem } from "~/types";
 
 const features: Array<FeatureItem> = [
@@ -43,7 +42,6 @@ const features: Array<FeatureItem> = [
 ];
 ---
 
-<ContentSection title="Features" id="features">
   <Fragment slot="lead">
     Astro comes <span class="text-primary">batteries included</span>. It takes
     the best parts of
@@ -63,4 +61,3 @@ const features: Array<FeatureItem> = [
       ))
     }
   </ul>
-</ContentSection>
