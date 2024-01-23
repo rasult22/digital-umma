@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        railway: ["Raleway Variable"],
         sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
       },
       colors: {
