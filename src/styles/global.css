@@ -17,3 +17,8 @@ a,
   background-size: contain;
   background-position: bottom;
 }
+
+.expectation-card {
+  border-radius: 32px;
+  background: linear-gradient(180deg, #1D2689 0%, #7F8AF9 0.01%, #01080E 100%);
+}
