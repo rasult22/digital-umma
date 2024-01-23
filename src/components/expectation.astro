@@ -1,22 +1,15 @@
 ---
 import { getCollection } from "astro:content";
-import ShowcaseCard from "~/components/showcase-card.astro";
 import Bigtech from '~/components/icons/bigtech.astro'
 import Dev from '~/components/icons/dev.astro'
 import Finance from '~/components/icons/finance.astro'
 import Invest from '~/components/icons/invest.astro'
 import Startups from '~/components/icons/startups.astro'
 import UIBtn from "./ui-btn.astro";
-const featuredSites = await getCollection(
-  "showcase",
-  ({ data }) => "featured" in data,
-);
-const orderedSites = featuredSites.sort(
-  (a, b) => a.data.featured! - b.data.featured!,
-);
+
 ---
 
-<div class="font-railway">
+<div class="max-w-[1280px] mx-auto font-railway">
   <div class="text-[45px] font-bold">Что будет на Digital Umma 2024?</div>
   <div class="flex space-x-14 mt-[60px]">
     <div class="expectation-card px-[41px] pt-[55px] pb-[65px]">
