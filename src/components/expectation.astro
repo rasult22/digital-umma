@@ -9,7 +9,7 @@ import UIBtn from "./ui-btn.astro";
 
 ---
 
-<div id="events" class="bg-[url('/bg-speakers.png')] bg-cover bg-no-repeat bg-center pb-[73px] font-railway">
+<div id="events" class="bg-[url('/bg-speakers.png')] bg-cover bg-no-repeat bg-center pb-[73px] sm:pb-[0] font-railway">
   <div class="max-w-[1280px] mx-auto">
     <div class="text-[45px] font-bold sm:text-[28px] sm:max-w-[50%] sm:mx-auto sm:text-center">Что будет на Digital Umma 2024?</div>
     <div class="flex sm:justify-center sm:flex-wrap sm:space-x-0 space-x-14 sm:space-y-[14px] sm:mt-[47px] mt-[60px]">
@@ -38,42 +38,42 @@ import UIBtn from "./ui-btn.astro";
         </div>
       </div>
     </div>
-    <div class="text-[32px] font-bold mt-[60px]">Направления Тем</div>
-    <div class="mt-[70px]">
-      <div class="flex justify-between overflow-auto">
+    <div class="sm:px-[24px] text-[32px] sm:text-[24px] font-bold mt-[60px]">Направления Тем</div>
+    <div class="sm:px-[24px] mt-[70px] sm:mt-[38px]">
+      <div class="flex justify-between sm:space-x-6 overflow-auto pb-6">
         <div class="text-[24px] text-center flex flex-col items-center justify-center h-[170px]">
           <Dev />
-          <div class="mt-auto">
-            IT Разработка
+          <div class="mt-auto sm:text-[17px] sm:leading-normal">
+            IT&nbsp;Разработка
           </div>
         </div>
         <div class="text-[24px] text-center flex flex-col items-center justify-center h-[170px]">
           <Bigtech />
-          <div class="mt-auto">
+          <div class="mt-auto sm:text-[17px] sm:leading-normal">
             Big Tech
           </div>
         </div>
         <div class="text-[24px] text-center flex flex-col items-center justify-center h-[170px]">
           <Startups />
-          <div class="mt-auto">
+          <div class="mt-auto sm:text-[17px] sm:leading-normal">
             Стартапы
           </div>
         </div>
         <div class="text-[24px] text-center flex flex-col items-center justify-center h-[170px] ">
           <Invest />
-          <div class="mt-auto">
+          <div class="mt-auto sm:text-[17px] sm:leading-normal">
             Инвестиции
           </div>
         </div>
         <div class="text-[24px] text-center flex flex-col items-center justify-center h-[170px]">
           <Finance />
-          <div class="mt-auto">
+          <div class="mt-auto sm:text-[17px] sm:leading-normal">
             Финансы
           </div>
         </div>
       </div>
     </div>
-    <div class="mt-[90px] flex justify-center">
+    <div class="mt-[90px] sm:hidden flex justify-center">
       <UIBtn href="https://docs.google.com/forms/d/12ZlQreBqfNXB95PaCbBpT8dX4hIZpWWUnsLuLO8CDYQ/edit" type="primary">Регистрация</UIBtn>
     </div>
   </div>
