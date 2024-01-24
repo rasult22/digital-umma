@@ -2,7 +2,7 @@
 const {type, href = '', title = '', disabled = false} = Astro.props
 ---
 <a href={href} target="_blank">
-  <button disabled={disabled} title={title} class={`disabled:cursor-not-allowed disabled:opacity-[0.6] text-[24px] font-semibold rounded-[11px] py-[10px] px-[39px] font-railway hover:opacity-[0.8] active:opacity-[0.7] ${type === 'primary' ? 'bg-gradient-to-r from-teal-500 via-indigo-700 to-purple-900': 'bg-[#65738087]'}`}>
+  <button disabled={disabled} title={title} class={`disabled:cursor-not-allowed disabled:opacity-[0.6] sm:disabled:opacity-[0.2] text-[24px] font-semibold rounded-[11px] py-[10px] px-[39px] font-railway hover:opacity-[0.8] active:opacity-[0.7] ${type === 'primary' ? 'bg-gradient-to-r from-teal-500 via-indigo-700 to-purple-900': 'bg-[#65738087]'}`}>
     <slot />
   </button>
 </a>
