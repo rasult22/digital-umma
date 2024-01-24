@@ -4,11 +4,11 @@ import UIBtn from "./ui-btn.astro"
 
 ---
 <div id="about" class="relative">
-  <div class="z-[1] max-w-[1280px] mx-auto pt-[187px] font-railway pb-[143px]">
-    <div class="text-[45px] font-bold bg-gradient-to-r from-cyan-300 via-purple-950 to-purple-700 text-transparent bg-clip-text">
+  <div class="z-[1] max-w-[1280px] sm:px-6 mx-auto pt-[187px] sm:pt-[40px] font-railway pb-[143px] sm:pb-[10px]">
+    <div class="text-[45px] sm:text-[28px] font-bold bg-gradient-to-r from-cyan-300 via-purple-950 to-purple-700 text-transparent bg-clip-text">
       О форуме
     </div>
-    <div class="mt-[52px] space-y-4 max-w-[697px]">
+    <div class="mt-[52px] sm:mt-[26px] sm:text-[16px] space-y-4 max-w-[697px]">
       <p>
         Digital Umma IT Forum - это не только форум, это движение, объединяющее передовые IT-решения с исламскими ценностями. 
       </p>
@@ -16,9 +16,10 @@ import UIBtn from "./ui-btn.astro"
         Наша миссия - создать диалог и сотрудничество между технологическими новаторами и представителями исламской общины, чтобы вдохновить следующее поколение лидеров и разработчиков.
       </p>
     </div>
-    <div class="mt-[32px]">
+    <div class="mt-[32px] sm:mt-[26px] sm:flex sm:justify-center">
       <UIBtn href="https://docs.google.com/forms/d/12ZlQreBqfNXB95PaCbBpT8dX4hIZpWWUnsLuLO8CDYQ/edit" type="primary">Принять участие</UIBtn>
     </div>
+    <div class="about-bg-sm sm:w-[70vw] mx-auto mt-[26px] !bg-center !bg-no-repeat !bg-contain aspect-square hidden sm:block sm:bg-no-repeat sm:bg-center sm:static"></div>
   </div>
-  <div class="absolute bottom-0 right-0 about-bg w-[604px] h-[616px]"></div>
+  <div class="absolute sm:hidden bottom-0 right-0 about-bg w-[604px] h-[616px]"></div>
 </div>
