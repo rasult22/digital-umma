@@ -19,6 +19,12 @@ module.exports = {
       borderColor: {
         default: "var(--color-border)",
       },
+      screens: {
+        "custom-screen": { raw: "(max-height: 670px)" },
+        lg: { min: "1200px" },
+        md: { max: "1200px", min: "700px" },
+        sm: { max: "700px", min: "0px" },
+      },
     },
   },
   plugins: [require("tailwindcss-fluid-type")],
