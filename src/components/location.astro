@@ -1,21 +1,23 @@
 ---
 import UIBtn from "./ui-btn.astro"
 ---
-<div class="font-railway relative bg-[url('/location-bg.png')] bg-cover pt-[71px] pb-[226px]">
-  <div class="relative max-w-[1280px] mx-auto flex">
+<div class="font-railway sm:pt-[0px] sm:pb-[70px] relative bg-[url('/location-bg.png')] bg-cover pt-[71px] pb-[226px]">
+  <div class="relative sm:px-[24px] max-w-[1280px] mx-auto flex">
     <div>
-      <div class="text-[45px] font-bold">
+      <div class="text-[45px] sm:text-[28px] font-bold">
         Где будет проходить форум?
       </div>
-      <div class="max-w-[635px] text-[29px] mt-[93px]">
+      <div class="max-w-[635px] text-[29px] sm:text-[16px] sm:mt-[23px] mt-[93px]">
         В главном исламском университете страны: <br/>
         Университет Нур-Мубарак,<br/>
         «Al Farabi» hall, город Алматы
       </div>
-      <div class="mt-[62px]">
+      <img class="hidden sm:block mt-[60px]" src="/nmu.png" alt="">
+
+      <div class="mt-[62px] sm:mt-[24px] sm:flex sm:justify-center">
         <UIBtn href="https://docs.google.com/forms/d/12ZlQreBqfNXB95PaCbBpT8dX4hIZpWWUnsLuLO8CDYQ/edit" type="primary">Хочу сходить!</UIBtn>
       </div>
     </div>
-    <img class="max-w-[790px] w-[50vw] absolute right-0 bottom-[-226px]" src="/nmu.png" alt="">
+    <img class="sm:hidden max-w-[790px] w-[50vw] absolute right-0 bottom-[-226px]" src="/nmu.png" alt="">
   </div>
 </div>
