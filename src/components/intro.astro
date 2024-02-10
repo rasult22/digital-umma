@@ -1,28 +1,30 @@
 ---
 import { Icon } from "astro-icon/components";
 import UIBtn from "./ui-btn.astro";
+import Timer from './svelte/timer.svelte'
 ---
 <div id="main" class="relative sm:py-[5vh] py-[204px]">
   <div class="bg-[rgba(0,0,0,0.5)] sm:bg-[rgba(0,0,0,0.9)]">
     <div class="relative z-[5]">
-      <div class="relative max-w-[1280px] mx-auto sm:flex sm:items-center sm:flex-col">
-        <div class="relative sm:order-3 sm:mt-[33px] flex sm:flex-col items-center space-x-5 text-[30px] sm:text-[20px] sm:space-x-0 sm:space-y-4 font-medium">
+      <div class="relative text-center max-w-[1280px] mx-auto sm:flex sm:items-center sm:flex-col">
+        <div class="relative sm:order-3 sm:mt-[33px] flex sm:flex-col justify-center items-center space-x-5 text-[30px] sm:text-[20px] sm:space-x-0 sm:space-y-4 font-medium">
           <span>17 Февраля, 2024</span>
           <svg class="sm:hidden" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
             <circle cx="5" cy="5" r="5" fill="#D9D9D9"/>
           </svg>
-          <span>11:00 (UTC 6+)</span>
+          <span>10:00 (UTC 6+)</span>
           <svg class="sm:hidden" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
             <circle cx="5" cy="5" r="5" fill="#D9D9D9"/>
           </svg>
           <span>Алматы, Казахстан</span>
         </div>
-        <div class="sm:order-2 mt-[26px] sm:text-center sm:mx-auto font-railway text-[88px] sm:text-[42px] sm:leading-normal sm:max-w-[50%] leading-[100px] uppercase font-extrabold max-w-[700px]">
+        <div class="sm:order-2 mx-auto mt-[26px] sm:text-center sm:mx-auto font-railway text-[88px] sm:text-[42px] sm:leading-normal sm:max-w-[50%] leading-[100px] uppercase font-extrabold max-w-[700px]">
           Digital Umma IT Forum
         </div>
         <div class="sm:order-1 mt-[36px] font-railway sm:max-w-[50vw] sm:text-center">
           Соединяя IT и Исламские Ценности
         </div>
+        <Timer client:idle />
         <div class="sm:order-3 mt-[36px] space-x-4 sm:space-x-0 sm:flex sm:flex-col sm:items-center sm:space-y-4">
           <UIBtn href="https://docs.google.com/forms/d/12ZlQreBqfNXB95PaCbBpT8dX4hIZpWWUnsLuLO8CDYQ/edit" type="primary">Принять участие</UIBtn>
           <UIBtn href="https://instagram.com/digital_umma">
