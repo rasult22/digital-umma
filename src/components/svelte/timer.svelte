@@ -22,7 +22,7 @@
 </script>
 <div class="sm:order-3">
   <div class="flex py-8 justify-center font-mono">
-    <div class="w-[230px] sm:w-[25vw] px-11 sm:px-4 border-r">
+    <div class="w-[230px] sm:w-[25vw] px-11 sm:px-4 border-r border-[#363636]">
       <div class="text-[80px] sm:text-[30px]  font-medium">
         {days}
       </div>
@@ -30,7 +30,7 @@
         дней
       </div>
     </div>
-    <div class="w-[230px] sm:w-[25vw] px-11 sm:px-4 border-r">
+    <div class="w-[230px] sm:w-[25vw] px-11 sm:px-4 border-r border-[#363636]">
       <div class="text-[80px] sm:text-[30px] font-medium">
         {hours === 0 ? '00' : hours}
       </div>
@@ -38,7 +38,7 @@
         часов
       </div>
     </div>
-    <div class="w-[230px] sm:w-[25vw] px-11 sm:px-4 border-r">
+    <div class="w-[230px] sm:w-[25vw] px-11 sm:px-4 border-r border-[#363636]">
       <div class="text-[80px] sm:text-[30px] font-medium">
         {minutes === 0 ? '00' : minutes}
       </div>
