@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 import UIBtn from "./ui-btn.astro";
 import Timer from './svelte/timer.svelte'
+import SocialMedia from './social-media.astro'
 ---
 <div id="main" class="relative sm:py-[5vh] py-[204px]">
   <div class="bg-[rgba(0,0,0,0.5)] sm:bg-[rgba(0,0,0,0.9)]">
@@ -28,7 +29,7 @@ import Timer from './svelte/timer.svelte'
         <div class="sm:order-3 mt-[36px] space-x-4 sm:space-x-0 sm:flex sm:flex-col sm:items-center sm:space-y-4">
           <UIBtn href="https://docs.google.com/forms/d/12ZlQreBqfNXB95PaCbBpT8dX4hIZpWWUnsLuLO8CDYQ/edit" type="primary">Принять участие</UIBtn>
           <UIBtn href="https://instagram.com/digital_umma">
-            <div class="flex items-center space-x-2">
+            <div class="flex items-center space-x-2 sm:hidden">
               <span>
                 Подписаться 
               </span>
@@ -38,6 +39,8 @@ import Timer from './svelte/timer.svelte'
             </div>
         </UIBtn>
         </div>
+        <SocialMedia orientation="inline" />
+        <SocialMedia orientation="fixed" />
       </div>
     </div>
   </div>

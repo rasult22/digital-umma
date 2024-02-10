@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 // import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
+import SocialMedia from "./social-media.astro";
 
 const navItems: Array<NavItem> = [
   { title: "Главное", url: "#main" },
@@ -147,6 +148,7 @@ const navItems: Array<NavItem> = [
               }
             </ul>
           </nav>
+          <SocialMedia orientation="inline" />
         </div>
       </div>
     </div>
