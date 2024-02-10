@@ -20,37 +20,37 @@
     }, 1000);
   })
 </script>
-<div>
-  <div class="flex space-x-4 py-8 justify-center font-mono">
-    <div class="w-[200px] px-8 border-r">
-      <div class="text-[80px]  font-medium">
+<div class="sm:order-3">
+  <div class="flex py-8 justify-center font-mono">
+    <div class="w-[230px] sm:w-[25vw] px-11 sm:px-4 border-r">
+      <div class="text-[80px] sm:text-[30px]  font-medium">
         {days}
       </div>
-      <div>
+      <div class="text-[20px] sm:text-[14px]">
         дней
       </div>
     </div>
-    <div class="w-[200px] px-8 border-r">
-      <div class="text-[80px]  font-medium">
+    <div class="w-[230px] sm:w-[25vw] px-11 sm:px-4 border-r">
+      <div class="text-[80px] sm:text-[30px] font-medium">
         {hours === 0 ? '00' : hours}
       </div>
-      <div>
+      <div class="text-[20px] sm:text-[14px]">
         часов
       </div>
     </div>
-    <div class="w-[200px] px-8 border-r">
-      <div class="text-[80px]  font-medium">
+    <div class="w-[230px] sm:w-[25vw] px-11 sm:px-4 border-r">
+      <div class="text-[80px] sm:text-[30px] font-medium">
         {minutes === 0 ? '00' : minutes}
       </div>
-      <div>
+      <div class="text-[20px] sm:text-[14px]">
         минут
       </div>
     </div>
-    <div class="w-[200px] px-8">
-      <div class="text-[80px]  font-medium">
+    <div class="w-[230px] sm:w-[25vw] px-11 sm:px-4">
+      <div class="text-[80px] sm:text-[30px]  font-medium">
         {seconds === 0 ? '00' : seconds}
       </div>
-      <div>
+      <div class="text-[20px] sm:text-[14px]">
         секунд
       </div>
     </div>
