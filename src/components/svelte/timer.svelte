@@ -6,7 +6,7 @@
   let minutes = 0
   let seconds = 0
 
-  const eventDate = new Date(Date.UTC(2024,1,17,4,0,0))
+  const eventDate = new Date(Date.UTC(2024,1,17,3,0,0))
   onMount(() => {
     const id = setInterval(() => {
       const date = new Date()
